@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --timberwolf: #dad7cdff;
+    --sage: #a3b18aff;
+    --verde-folha: #588157ff;
+    --verde-musgo: #3a5a40ff;
+    --verde-escuro: #344e41ff;
+    --preto: #000000;
+    --fonte-titulo: "Acme", sans-serif;
+    --fonte-texto: "Noticia Text", serif;
+}
+
+body{
+    background-color: var(--verde-folha);
+    font-family: var(--fonte-texto);
+    color: var(--preto);
+    height: 100vh;
+}
+
+header{
+    background-color: var(--verde-musgo);
+    text-align: center;
+}
+
+h1{
+    font-family: var(--fonte-titulo);
+    font-size: 3rem;
+    color: var(--sage);
+}
+nav{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+nav a{
+    text-decoration: none;
+    color: var(--preto);
+    font-size: 2rem;
+    margin: 0 2rem 1rem 0;
+}
+
+nav a:hover{
+    text-transform: underline;
+    color: var(--verde-escuro);
+    transform: scale(0.9);
+    transition: transform 0.3s;
+}
+
+.caixa-grafico{
+    margin: 5rem;
+    font-size: 1.5rem;
+    background-color: var(--sage);
+    padding: 2rem;
+    border-radius: 15px;
+    border: var(--preto) double 5px;
+
+}
+
+.caixa-grafico__texto{
+    font-size: 1.5rem;
+    padding: 2em 0 2.5em 0;
+}
+
+span{
+    font-family: var(--fonte-titulo);
+    color: var(--preto);
+    font-size: 40px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--verde-musgo);
+    color: var(--sage);
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
